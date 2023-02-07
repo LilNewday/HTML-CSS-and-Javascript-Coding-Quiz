@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+  
   <body>
-    <div class = High-Score>
-       <header>
-        <h1>View High Scores</h1>
-       </header> 
+    <div class = High-Score><a href="highscores.html">
+        <header>
+            <h1>View High Scores</h1>
+           </header>
+    </a> 
     </div>
+    
     <div class = time>
         <header>
             <h1>Time</h1>
         </header>
     </div>
+    
     <div>
-        Coding Quiz Challenge
+        <h1 id = Title>Coding Quiz Challenge</h1>
     </div>
-   
-    <script src="script.js"></script>
+    
+    <div class = Intro>
+        <p>Try to answer the following code-related questions within the time limit.
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+    </div>
+    
+    <div class = Btn> 
+    <button class = 'Start-Button'>
+        Start Quiz
+    </button>
+    </div>
+   <script src="./assets/js/questions.js"></script>
+   <script src="./assets/js/logic.js"></script>
   </body>
 </html>
