@@ -24,11 +24,11 @@
     width: 25%;
 }
 
-.Btn {
+.Start {
     text-align: center;
 }
 
-.Start-Button {
+#Start {
     border: none;
     background-color: rgb(76, 0, 255);
     border-radius: 25px;
