@@ -1,8 +1,13 @@
 var timerEl = document.getElementById('time');
 var StartBtn = document.getElementById('Start');
+var questionsEl = document.getElementById('questions');
+
+var currentQuestionIndex = 0;
+var time = questions.length * 10;
+var timerId;
 
 // Timer that counts down from 165
-function time() {
+function timer() {
     var timeLeft = 165;
 // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
     var timeInterval = setInterval(function () {
@@ -13,7 +18,7 @@ function time() {
 // Decrement `timeLeft` by 1
     timeLeft--;
     }  else if (timeLeft === 1) {
-// When `timeLeft` is equal to 1, rename to 'second' instead of 'seconds'
+// When `timeLeft` is equal to 1, rename to 'second remaining' instead of 'seconds'
       timerEl.textContent = timeLeft + ' second remaining';
       timeLeft--;
     } else {
@@ -22,9 +27,10 @@ function time() {
 // Use `clearInterval()` to stop the timer
       clearInterval(timeInterval);
     }
-  }, 1000);
+  }, 1000); 
 }
 
 
+
 // event listener that allows the timer to start when starting quiz
-StartBtn.addEventListener("click", time);
+StartBtn.addEventListener("click", timer);
