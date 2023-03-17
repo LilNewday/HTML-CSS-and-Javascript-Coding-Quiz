@@ -44,14 +44,46 @@
   cursor: pointer;
 }
 
+#questions {
+    text-align: justify;
+  float: center;
+  margin-left: 38%;
+  margin-top: 15%;
+  font-size: 20px;
+  border-radius: 25px;
+  width: 25%;
+}
+
 .hide {
   display: none;
 }
 
 .choices button {
+    text-align: justify;
+    float: center;
+    background-color: rgb(76, 0, 255);
+    color: hsl(0, 0%, 100%);
+    margin-left: 38%;
+    margin-top: 15%;
+    font-size: 20px;
+    width: 25%;
   display: block;
 }
 
+#end-screen {
+    text-align: justify;
+  float: center;
+  margin-left: 38%;
+  margin-top: 15%;
+  font-size: 20px;
+  border-radius: 25px;
+  width: 25%;
+}
+
+input[type="text"] {
+    font-size: 100%;
+  }
+  
 .Leaderboard {
   text-align: center;
   margin-top: 15%;
