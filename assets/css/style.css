@@ -70,6 +70,20 @@
   display: block;
 }
 
+#end-screen {
+    text-align: justify;
+  float: center;
+  margin-left: 38%;
+  margin-top: 15%;
+  font-size: 20px;
+  border-radius: 25px;
+  width: 25%;
+}
+
+input[type="text"] {
+    font-size: 100%;
+  }
+  
 .Leaderboard {
   text-align: center;
   margin-top: 15%;
