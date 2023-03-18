@@ -20,6 +20,10 @@ To add a screenshot, create an assets/images folder in your repository and uploa
 
 alt text
 
+## Credits
+
+N/A
+
 ## License
 
 MIT License
