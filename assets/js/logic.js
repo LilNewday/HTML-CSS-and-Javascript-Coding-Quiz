@@ -3,6 +3,8 @@ var timerEl = document.getElementById("time");
 var StartBtn = document.getElementById("Start");
 var questionsEl = document.getElementById("questions");
 var choicesEl = document.getElementById("choices");
+var submitBtn = document.getElementById("submit");
+var initialsEl = document.getElementById("initials");
 
 // Keeps track of quiz state
 var currentQuestionIndex = 0;
@@ -35,8 +37,9 @@ function getQuestion() {
 // Allows the timer function to set the time and allows the questionClick function to affect the time
 var time = null;
 
-// Timer that counts down from 165
+// Timer that counts down from 80
 function timer() {
+  // Starts the timer for 80 seconds
   setTimeout((time = 80));
   // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
@@ -111,12 +114,47 @@ function End() {
   var endScreenEl = document.getElementById("end-screen");
   endScreenEl.removeAttribute("class");
 
-  // show final score
+  // shows final score
   var finalScoreEl = document.getElementById("final-score");
   finalScoreEl.textContent = time;
+}
+
+function saveHighscore() {
+  // Records what is typed in the initials box
+  var initials = initialsEl.value.trim();
+
+  // Checks the intials to make sure there is input
+  if (initials !== "") {
+    // Gathers previous scores from localstorage or creates new ones
+    var highscores = JSON.parse(window.localStorage.getItem("Score")) || [];
+
+    // formats the score for the current user
+    var newScore = {
+      score: time,
+      initials: initials,
+    };
+
+    // saves the Highscore to localstorage
+    highscores.push(newScore);
+    window.localStorage.setItem("Score", JSON.stringify(highscores));
+
+    // redirects user to highscore page
+    window.location.href = "highscores.html";
+  }
+}
+
+function checkForEnter(event) {
+  // Allows the user to type in initial box without sending them straight to highscores page
+  if (event.key === "Enter") {
+    saveHighscore();
+  }
 }
 
 // event listener that allows the timer to start when starting quiz
 StartBtn.addEventListener("click", timer);
 // Allows user to click on choices and runs event
 choicesEl.onclick = questionClick;
+// Allows user to click 'submit' button to save their score and send them to Highscore page
+submitBtn.onclick = saveHighscore;
+// Without it, it does not read the initial box, so when you submit, it does not record anything
+initialsEl.onkeyup = checkForEnter;
