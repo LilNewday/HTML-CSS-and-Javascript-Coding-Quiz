@@ -1,40 +1,40 @@
-As you proceed in your journey to becoming a full-stack web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges.
+# Coding Quiz
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework will teach you all the skills you need to succeed in this assignment.
+## Description
+Here
 
-AS A coding boot camp student
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
 
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+## Table of Contents 
+- [Description] (#Description)
+- [Installation] (#Installation)
+- [Usage] (#Usage)
+- [License] (#License)
 
-SO THAT I can gauge my progress compared to my peers
+## Installation
+N/A
 
-GIVEN I am taking a code quiz
+## Usage
 
-WHEN I click the start button
+Provide instructions and examples for use. Include screenshots as needed.
 
-THEN a timer starts and I am presented with a question
+To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-GIVEN I am taking a code quiz
+alt text
 
-WHEN I answer a question
+## License
 
-THEN I am presented with another question
+MIT License
 
-GIVEN I am taking a code quiz
+Copyright (c) 2023 LilNewday
 
-WHEN I answer a question incorrectly
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-THEN time is subtracted from the clock
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-GIVEN I am taking a code quiz
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-WHEN all questions are answered or the timer reaches 0
-
-THEN the game is over
-
-GIVEN I am taking a code quiz
-
-WHEN the game is over
-
-THEN I can save my initials and score
-
+--
