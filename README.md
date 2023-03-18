@@ -8,13 +8,8 @@ Here
 - What problem does it solve?
 - What did you learn?
 
-## Table of Contents 
-- [Description] (#Description)
-- [Installation] (#Installation)
-- [Usage] (#Usage)
-- [License] (#License)
-
 ## Installation
+
 N/A
 
 ## Usage
