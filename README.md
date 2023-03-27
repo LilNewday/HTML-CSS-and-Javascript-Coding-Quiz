@@ -1,12 +1,8 @@
-# Coding Quiz
+# HTML CSS and Javascript Coding Quiz
 
 ## Description
-Here
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+I needed to test my knowledge on some of the basic know-how's of HTML, CSS, and Javascript and figured this would be a fun way to do it. With an overwhelming amount of knowledge and information I was constantly learning in these areas I thought a nice warm up could benefit my retention of all these skills and allow me to reflect on the progress i've made. It's simple now, but maybe in the future i'll expand on it some more to keep me on my toes. I learned a lot making this quiz and I think one of my biggest deals was proper file management and linkage. After that it was dealing with DOM elements and FREAKING localStorage!! On the plus side after that everything else wasn't as bad and I got a nice reminder that it's hard to manipulate a timer when you introduce it in a function instead of outside as a variable at least.
 
 ## Installation
 
@@ -14,11 +10,23 @@ N/A
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+First things first is the Home Page. All you have to do is click "Start Quiz" and the quiz will begin.
 
-alt text
+![Home Page](https://user-images.githubusercontent.com/115208733/227858682-01c779f9-8fcb-4993-a085-ba23feab8fdd.png)
+
+After that the timer will begin and you have 80 seconds to answer all 11 questions with a 10 second penalty for wrong answers.
+
+![Quiz Layout](https://user-images.githubusercontent.com/115208733/227858826-a6a38c0e-2b62-46d7-88a9-d9be3640d068.png)
+
+Once that's over you will receive a score based on the timer you were at when you completed the quiz. This is where you enter in your initials to be placed on the leaderboards.
+
+![End of Quiz](https://user-images.githubusercontent.com/115208733/227858998-22565938-933f-4837-bd84-ee9959d63ceb.png)
+
+Then you can view the leaderboards and see where you placed at.
+
+![High Scores](https://user-images.githubusercontent.com/115208733/227859616-f698bbb3-d9ea-4383-bbd1-f276da207ccc.png)
+
 
 ## Credits
 
