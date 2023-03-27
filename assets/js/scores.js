@@ -20,7 +20,7 @@ function clear() {
   window.location.reload();
 }
 // Allows you to click 'Clear Highscores' button and clears the Highscores
-document.getElementById("clear").onclick = clearHighscores;
+document.getElementById("clear").onclick = clear;
 
 // runs when page loads
 Scoreprinter();
